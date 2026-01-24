@@ -1,0 +1,53 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* ===== hero（画面上半分） ===== */
+.hero {
+  height: 50vh;                 /* 画面の半分 */
+  display: flex;
+  justify-content: center;      /* 横中央 */
+  align-items: center;          /* 縦中央 */
+  background-color: #f5f5f5;    /* 仮背景（確認用） */
+}
+
+.hero img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* ===== products（下半分） ===== */
+.products {
+  padding: 40px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.product-item {
+  width: 22%;
+}
+
+.product-item img {
+  width: 100%;
+  display: block;
+}
+
+/* ===== footer ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
