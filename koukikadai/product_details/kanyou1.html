@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>details</title>
+
+    <meta name="description" content="商品詳細">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- リセットCSS（学習中は入れてOK） -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+    <!-- Google Font（雰囲気用） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+
+  <body class="page-product-detail">
+    <main>
+      <section class="product-detail">
+
+        <!-- 画像エリア -->
+        <div class="product-image-area">
+          <img
+              class="product-image"
+              src="../images/kannyou.jpg"
+              alt="観葉植物"
+              >
+        </div>
+
+          <!-- 商品情報 -->
+          <div class="product-info">
+            <h1 class="product-name">観葉植物</h1>
+
+            <table class="detail-table">
+              <tr>
+                <th>Price</th>
+                <td>¥700</td>
+              </tr>
+              <tr>
+                <th>Size</th>
+                <td>30cm</td>
+              </tr>
+            </table>
+          </div>
+
+          <!-- 購入エリア -->
+          <div class="purchase-area">
+            <form class="purchase-form">
+              <label for="quantity" class="quantity-label">個数</label>
+
+              <select id="quantity" name="quantity" class="quantity-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+
+              <button type="submit" class="add-to-cart">
+                カートに入れる
+              </button>
+            </form>
+          </div>
+
+      </section>
+    </main>
+  </body>
+
