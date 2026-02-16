@@ -1,50 +1,116 @@
-body {
-
-  font-family: 'Montserrat', sans-serif;
+/* 全体リセット */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* ===== hero（画面上半分） ===== */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: #f2f6fa;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ヘッダー */
+.header {
+  background: #222;
+  padding: 20px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-list a:hover {
+  color: #6dd5ed;
+}
+
+/* ヒーロー */
 .hero {
-  height: 50vh;
-  background-image: url("../images/welcom.jpg");
-  background-size: 60%;
-  background-position: center 30%;
-  background-repeat: no-repeat;
+  height: 300px;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
 }
 
-/* ===== products（下半分） ===== */
-.products {
-  padding: 40px;
-}
-
-.products h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
+/* 商品一覧 */
 .product-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
   list-style: none;
-  padding: 0;
 }
 
 .product-item {
-  width: 22%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
 }
 
 .product-item img {
-  width: 100%;
-  display: block;
+  width: 150px;
+  height: auto;
 }
 
-/* ===== footer ===== */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  color: #666;
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* フッター */
+.footer {
+  background: #222;
+  color: white;
+  padding: 40px 0;
+  margin-top: 60px;
+}
+
+.footer-content {
+  align-items: flex-start;
+}
+
+.footer-center a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.footer-center a:hover {
+  text-decoration: underline;
 }
 
 /* =============================
@@ -52,12 +118,13 @@ footer {
    共通CSS（topと同一）
    ============================= */
 body {
-  background-color:#7BBFEA;
+  background: linear-gradient(to bottom, #eaf3f9, #dfe9f3);
 }
+
 .product-card{
   background-color: #fff;
   border-radius: 8px;
-  padding: 16px;
+  padding: 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: transform 0.2s ease,box-shadow 0.2s ease;
@@ -103,7 +170,7 @@ body {
 /* ===== ページ全体 ===== */
 .page-product-detail {
   font-family: sans-serif;
-  background: #f7f7f7;
+  linear-gradient(to bottom, #eaf3f9, #dfe9f3);
 }
 
 main {
@@ -190,19 +257,86 @@ main {
   border: 1px solid #ccc;
 }
 
-/* ボタン */
 .add-to-cart {
-  margin-left: auto;
-  padding: 10px 16px;
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2c7;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.add-to-cart:hover {
+  background: #25a;
+}
+
+/* ===== ページ全体 ===== */
+.page-contact {
+  linear-gradient(to bottom, #eaf3f9, #dfe9f3);
+  font-family: sans-serif;
+}
+
+main {
+  padding: 60px 20px;
+}
+
+/* ===== お問い合わせ全体 ===== */
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 24px;
+}
+
+/* ===== フォーム ===== */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2c7;
+}
+
+/* ===== ボタン ===== */
+.submit-button {
+  width: 100%;
+  padding: 12px;
   background: #2c7;
   color: #fff;
   border: none;
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 10px;
 }
 
-.add-to-cart:hover {
-  background: #25a;
+.submit-button:hover {
+  background: #259b63;
 }
 

@@ -1,0 +1,65 @@
+<body class="page-contact">
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoe Store</title>
+
+  <meta name="description" content="生活に必要なアイテムオンラインストア">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- リセットCSS（学習中は入れてOK） -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+  <!-- Google Font（雰囲気用） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- オリジナルCSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+  <main>
+    <section class="contact">
+
+      <h1 class="contact-title">お問い合わせ</h1>
+
+      <form class="contact-form" action="#" method="post">
+
+        <!-- 名前 -->
+        <div class="form-group">
+          <label for="name" class="form-label">お名前</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-input"
+            required
+          >
+        </div>
+
+        <!-- メール -->
+        <div class="form-group">
+          <label for="email" class="form-label">メールアドレス</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            required
+          >
+        </div>
+
+        <!-- 送信 -->
+        <button type="submit" class="submit-button">
+          送信する
+        </button>
+
+      </form>
+
+    </section>
+  </main>
+</body>
+

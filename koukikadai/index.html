@@ -1,38 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <title>Shoe Store</title>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shoe Store</title>
 
-  <meta name="description" content="生活に必要なアイテムオンラインストア">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="生活に必要なアイテムオンラインストア">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- リセットCSS（学習中は入れてOK） -->
-  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!-- リセットCSS（学習中は入れてOK） -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 
-  <!-- Google Font（雰囲気用） -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Google Font（雰囲気用） -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-  <!-- オリジナルCSS -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<body class="page-product-top">
+  <body class="page-product-top">
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Shoe Store</h1>
 
-  <header>
-    <nav class="nav">
-      <h1 class="logo">Shoe Store</h1>
-      <!-- ナビメニューはあとで -->
-    </nav>
-  </header>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="catalog.html">SHOP</a></li>
+            <li><a href="productdetail/kanyou.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <section class="hero"> <!-- メイン画像 -->
-      	<h2>Welcome to Our Store</h2>  
-    </section>
-    
+
+    <main>
+      <section class="hero"> <!-- メイン画像 -->
+        <h2>Welcome to Our Store</h2>  
+      </section>
+
 
 
       <ul class="product-list">
@@ -49,13 +57,28 @@
           <img src="images/shoes4.jpg" alt="シューズ4">
         </li>
       </ul>
-    </section>
-  </main>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-left">
+          <p>&copy; 2026 Shoe Store</p>
+        </div>
 
-  <footer>
-    <p>&copy; 2026 Shoe Store</p>
-  </footer>
+        <div class="footer-center">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Shipping Info</a>
+        </div>
 
-</body>
+        <div class="footer-right">
+          <p>名前:中村 悠佑</p>
+          <p>学籍番号：s25006</p>
+        </div>
+      </div>
+    </footer>
+
+
+  </body>
 </html
 
